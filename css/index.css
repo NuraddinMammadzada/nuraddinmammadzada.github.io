@@ -53,7 +53,16 @@ header>div.header>span>a {
 header>span>a:hover {
     background-color: #0789b5c9;
 }
+a.user {
+    margin-left: 440px;
+}
 
+a.user3 {
+    padding: 0px;
+}
+a.user2 {
+    padding-right: 0px;
+}
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
