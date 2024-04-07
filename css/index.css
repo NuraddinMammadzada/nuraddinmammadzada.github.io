@@ -64,7 +64,7 @@ header>span>a:hover {
 .card {
     border: 1px solid #ccc;
     padding: 10px;
-
+    cursor: pointer;
 }
 
 .card img {

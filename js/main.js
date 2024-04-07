@@ -20,7 +20,7 @@ function createCarCard(car) {
     const card = document.createElement("div");
     card.classList.add("card");
     card.innerHTML = `
-        <img src="images/${car.image}" alt="${car.brand} ${car.model}">
+        <img src="images/${car.image}" alt="${car.brand} ${car.model}"onclick="">
         <h2>${car.brand} ${car.model}</h2>
         <p><strong>IL:</strong> ${car.year}</p>
         <p><strong>Qiymet:</strong> ${car.price} AZN</p>
