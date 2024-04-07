@@ -3,7 +3,7 @@ const cars = [
     { brand: "Toyota", model: "Corolla", year: 2018, price: 25000, probeg: 125000, image: "toyota_corolla.jpg" },
     { brand: "Honda", model: "Civic", year: 2019, price: 27000,probeg: 125000, image: "honda_civic.jpg" },
     { brand: "Ford", model: "Fusion", year: 2017, price: 20000,probeg: 125000, image: "ford_focus.jpg" },
-    { brand: "Mercedes", model: "E200", year: 2018, price: 25000,probeg: 125000, image: "E200sda.jpg" },
+    { brand: "Mercedes", model: "E200", year: 2018, price: 25000,probeg: 125000, image: "E200.jpg" },
     { brand: "Bmw", model: "Civic", year: 2019, price: 27000,probeg: 125000, image: "honda_civic.jpg" },
     { brand: "Nissan", model: "Fusion", year: 2017, price: 20000,probeg: 125000, image: "ford_focus.jpg" },
     { brand: "Mercedes-Amg", model: "Corolla", year: 2018, price: 25000,probeg: 125000, image: "toyota_corolla.jpg" },
