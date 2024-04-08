@@ -12,10 +12,12 @@ header {
     gap: 24px;
     height: 50px;
 }
+
 div.header-top {
     height: 40px;
     margin-left: 85px;
 }
+
 div.header-top>a {
     text-decoration: none;
     color: rgba(34, 34, 34, 0.597);
@@ -24,7 +26,7 @@ div.header-top>a {
 
 div.header {
     margin-left: 255px;
-    margin-right: 85px; 
+    margin-right: 85px;
 
 }
 
@@ -53,6 +55,7 @@ header>div.header>span>a {
 header>span>a:hover {
     background-color: #0789b5c9;
 }
+
 a.user {
     margin-left: 440px;
 }
@@ -60,15 +63,17 @@ a.user {
 a.user3 {
     padding: 0px;
 }
+
 a.user2 {
     padding-right: 0px;
 }
+
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 40px;
     padding: 20px;
-  
+
 }
 
 .card {
@@ -84,6 +89,7 @@ a.user2 {
     max-width: 100%;
     height: auto;
 }
+
 a.new-btn {
     display: flex;
     -webkit-box-align: center;
@@ -102,4 +108,19 @@ a.new-btn {
     text-decoration: none;
     -o-transition: 0.2s background-color;
     transition: 0.2s background-color;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+div.footer>a,
+i {
+    color: white;
+    text-decoration: none;
 }

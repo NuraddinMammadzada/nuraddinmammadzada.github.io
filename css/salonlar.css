@@ -150,3 +150,15 @@ div.numayendeler {
     height: 15px;
 
 } */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+  }
+  div.footer>a ,i {
+    color: white;
+    text-decoration: none;
+  }
