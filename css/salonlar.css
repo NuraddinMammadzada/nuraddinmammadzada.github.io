@@ -12,10 +12,12 @@ header {
     gap: 24px;
     height: 50px;
 }
+
 div.header-top {
     height: 40px;
     margin-left: 85px;
 }
+
 div.header-top>a {
     text-decoration: none;
     color: rgba(34, 34, 34, 0.597);
@@ -24,7 +26,7 @@ div.header-top>a {
 
 div.header {
     margin-left: 255px;
-    margin-right: 85px; 
+    margin-right: 85px;
 
 }
 
@@ -37,7 +39,7 @@ header>div.header>a.as {
     padding: 23px 25px 23px 0px;
 }
 
-header>div.header>span {}
+
 
 header>div.header>span>a {
     color: white;
@@ -53,6 +55,7 @@ header>div.header>span>a {
 header>span>a:hover {
     background-color: #0789b5c9;
 }
+
 a.user {
     margin-left: 440px;
 }
@@ -60,6 +63,90 @@ a.user {
 a.user3 {
     padding: 0px;
 }
+
 a.user2 {
     padding-right: 0px;
 }
+
+a.new-btn {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-self: center;
+    background-color: #7ed321;
+    height: 40px;
+    border-radius: 7px;
+    margin: 0 0 0 auto;
+    padding: 0 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    -o-transition: 0.2s background-color;
+    transition: 0.2s background-color;
+}
+
+a>img {
+    position: absolute;
+    height: 35px;
+    width: 75px;
+    left: 80%;
+    width: auto !important;
+    transform: translate(-50%, 0);
+   
+}
+img {
+     border-radius: 8px 8px 8px 8px;
+    /*width: 145px;height: 146px; */
+    position: relative;
+    width: auto;
+    height: 146px;
+}
+
+aside>h3 {
+    color: rgb(1, 1, 59);
+    margin: 0;
+}
+
+main {
+    padding: 15px;
+}
+div.numayendeler {
+    border: 1px solid rgba(0, 0, 0, 0.234);
+    border-radius: 12px 12px 12px 12px;
+    /* width: 456px; */
+    height: 145px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.534);
+    margin: 20px;
+    display: flex;
+    position: relative;
+}
+.numayendeler>h4 {
+   margin-left: 10px;
+   height: 35px;
+   width: 140px;
+   margin-bottom: 0;
+   margin-top: 4px;
+}
+.numayendeler>p {
+    /* margin-top: 70px;
+    margin-right: 30px; */
+    position: relative;
+    top: 55px;
+    right: 75px;
+    /* width: 220px; */
+    height: 40px;
+}
+/* .numayendeler>p#a2 { */
+    /* position: relative;
+    top: 95px;
+    right: 215px;
+    width: 220px;
+    height: 40px;
+    margin: 0;
+    width: 120px;
+    height: 15px;
+
+} */
