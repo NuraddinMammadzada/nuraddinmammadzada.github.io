@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Car Sales Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            background: white;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="file"] {
+            padding: 8px;
+            margin-top: 10px;
+            width: calc(100% - 16px);
+            /* Adjust width to account for padding */
+            display: block;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background: white;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        li img {
+            width: 100px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        li h2 {
+            margin: 0 10px 0 0;
+            flex-grow: 1;
+        }
+
+        li p {
+            margin: 4px 0;
+        }
+
+        li button {
+            margin-left: auto;
+            /* Push the button to the right */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            width: auto;
+            height: auto;
+        }
+
+        header {
+            background-color: #00abe4;
+            color: #fff;
+            /* padding: 8px; */
+            display: flex;
+            gap: 24px;
+            height: 50px;
+        }
+
+        div.header-top {
+            height: 40px;
+            margin-left: 85px;
+        }
+
+        div.header-top>a {
+            text-decoration: none;
+            color: rgba(34, 34, 34, 0.597);
+            padding: 20px;
+        }
+
+        div.header {
+            margin-left: 255px;
+            margin-right: 85px;
+
+        }
+
+        header>div.header>a.as {
+            color: white;
+            text-decoration: none;
+            height: 60px;
+            font-size: 24px;
+            /* justify-content: center; */
+            padding: 23px 25px 23px 0px;
+        }
+
+
+
+        header>div.header>span>a {
+            color: white;
+            text-decoration: none;
+            padding: 21px 15px;
+            justify-content: center;
+            height: 60px;
+            text-align: center;
+            size: 32px;
+            font-size: 17px;
+        }
+
+        header>span>a:hover {
+            background-color: #0789b5c9;
+        }
+
+        a.user {
+            margin-left: 440px;
+        }
+
+        a.user3 {
+            padding: 0px;
+        }
+
+        a.user2 {
+            padding-right: 0px;
+        }
+
+        a.new-btn {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            align-self: center;
+            background-color: #7ed321;
+            height: 40px;
+            border-radius: 7px;
+            margin: 0 0 0 auto;
+            padding: 0 10px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #fff;
+            text-decoration: none;
+            -o-transition: 0.2s background-color;
+            transition: 0.2s background-color;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-top">
+        <a href="https://tap.az/">Tap.az</a>
+        <a href="https://turbo.az/">Turbo.az</a>
+        <a href="https://github.com/NuraddinMammadzada">GitHub.com</a>
+        <a href="" class="user">Destek:(+994)0552482303</a>
+        <a href="">RU</a>
+        <a href=""><i class="fa-solid fa-heart"></i>Secilmisler</a>
+        <a href="" class="user2"><i class="fa-solid fa-user"></i>SignUp</a>
+        <header>
+            <div class="header">
+                <a href="" class="as">NITRO.AZ</a>
+                <span>
+                    <a href="index.html">Butun Elanlar</a>
+                    <a href="salonlar.html">Salonlar</a>
+                    <a href="moto.html">Moto</a>
+                    <a href="#">Ehtiyyat Hisseleri ve Aksesuarlar</a>
+                    <a href="#">Icare</a>
+                </span>
+                <h1 onclick="document.location"></h1>
+            </div>
+            <a href="index1.html" class="new-btn" style="margin-right: 5%;"> + Yeni ELan</a>
+        </header>
+        <h1>Car Sales Management</h1>
+
+        <form id="carForm">
+            <input type="hidden" id="carIndex" value="-1">
+            <input type="text" id="carModel" placeholder="Model" required>
+            <input type="text" id="carYear" placeholder="Year of Manufacture" required>
+            <input type="number" id="carPrice" placeholder="Price" required>
+            <input type="number" id="carMileage" placeholder="Mileage" required>
+            <input type="file" id="carPhoto" accept="image/*">
+            <button type="submit">Save</button>
+        </form>
+
+        <ul id="carsList"></ul>
+
+        <script src="app.js"></script>
+</body>
+
+</html>
