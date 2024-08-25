@@ -1,0 +1,145 @@
+/* RoomInspiration.css */
+
+.container {
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #ffafbd, #ffc3a0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.header button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: #ffffff;
+  background: linear-gradient(90deg, #ffafbd, #ffc3a0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.header button:hover {
+  background: linear-gradient(90deg, #ffc3a0, #ffafbd);
+}
+
+.room-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.room {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.room img {
+  width: 100%;
+  height: auto;
+  
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.room img {
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+  left: 1cm;
+  top: 2cqb;
+
+}
+
+.room img:hover {
+  transform: scale(1.05);
+}
+
+.room-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  color: #333333;
+}
+
+.room-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ffafbd;
+}
+
+.room-name {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.room-title {
+  font-size: 1rem;
+  color: #999999;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.pagination span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #cccccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.pagination .active {
+  background: #ffafbd;
+}
+
+.pagination span:hover {
+  background: #ffc3a0;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .room-gallery {
+    grid-template-columns: 1fr;
+  }
+}

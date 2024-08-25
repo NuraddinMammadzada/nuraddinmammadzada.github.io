@@ -1,0 +1,24 @@
+.sidebar {
+    width: 250px;
+    padding: 1rem;
+    background-color: #f3f3f3;
+    border-right: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.filter-section {
+    margin-bottom: 1.5rem;
+}
+
+.filter-section h4 {
+    margin-bottom: 0.5rem;
+}
+
+.filter-section label {
+    display: block;
+    margin-bottom: 0.3rem;
+    cursor: pointer;
+}
