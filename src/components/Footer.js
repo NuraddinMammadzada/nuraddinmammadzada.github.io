@@ -27,13 +27,7 @@ const Footer = () => {
                             <li>Privacy Policies</li>
                         </ul>
                     </div>
-                    <div className="footer-column">
-                        <h3>Newsletter</h3>
-                        <form>
-                            <input type="email" placeholder="Enter Your Email Address" />
-                            <button type="submit">SUBSCRIBE</button>
-                        </form>
-                    </div>
+                  
                 </div>
             </div>
             <div className="footer-bottom">

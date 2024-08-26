@@ -1,0 +1,267 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+  }
+  
+  .contact-page {
+    padding: 20px;
+  }
+  
+  /* Header Section */
+  .contact-header {
+    position: relative;
+    background-image: url('../img/image\ copy\ 2.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+  }
+  
+  /* Overlay to darken the image for better text readability */
+  .contact-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity for darker or lighter effect */
+    z-index: 1;
+  }
+  
+  .contact-header h2,
+  .contact-header p {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+  }
+  
+  .contact-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-header p {
+    font-size: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-header {
+      padding: 40px 15px;
+    }
+  
+    .contact-header h2 {
+      font-size: 2rem;
+    }
+  
+    .contact-header p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-header {
+      padding: 30px 10px;
+    }
+  
+    .contact-header h2 {
+      font-size: 1.8rem;
+    }
+  
+    .contact-header p {
+      font-size: 0.8rem;
+    }
+  }
+  
+  
+
+  
+  /* Main Content */
+  .contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    color: #d4af37;
+    margin-right: 15px;
+  }
+  
+  .contact-item h4 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  
+  .contact-item p {
+    margin: 5px 0 0 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form p {
+    margin-bottom: 20px;
+    color: #777;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .contact-form button {
+    background-color: #d4af37;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  /* Footer Section */
+  .footer {
+    background-color: #fff;
+    padding: 20px 10px;
+    border-top: 1px solid #eaeaea;
+  }
+  
+  .footer-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .footer-item {
+    flex: 1;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    padding: 0 10px;
+  }
+  
+  .footer-column h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+  }
+  
+  .footer-column input {
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .footer-column button {
+    background-color: #d4af37;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .footer p {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-content {
+      grid-template-columns: 1fr;
+    }
+  
+    .contact-form {
+      margin-top: 30px;
+    }
+  
+    .footer-info {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+    }
+  
+    .footer-column {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-header h2 {
+      font-size: 1.5rem;
+    }
+  
+    .contact-header p {
+      font-size: 0.8rem;
+    }
+  
+    .contact-form h3 {
+      font-size: 1.2rem;
+    }
+  }
+  

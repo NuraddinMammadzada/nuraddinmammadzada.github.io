@@ -6,6 +6,7 @@ import CategoryPage from './components/CategoryPage';
 import CartPage from './components/CartPage';
 import Footer from './components/Footer';
 import Shop from './components/Shop';
+import Contact from './components/Contact';
 import ProductDetail from './components/ProductDetail';
 import './App.css';
 
@@ -45,6 +46,7 @@ const App = () => {
         <Route path="/clothing-for-namaz" element={<CategoryPage products={products.filter(product => product.category === 'Clothing for Namaz')} />} />
         <Route path="/cart" element={<CartPage cartItems={[]} />} />
         <Route path="/shop" element={<Shop />} /> 
+        <Route path="/contact" element={<Contact />} />
         <Route path="/product/:id" element={<ProductDetail />} />
 
       </Routes>
