@@ -8,6 +8,8 @@ import Footer from './components/Footer';
 import Shop from './components/Shop';
 import Contact from './components/Contact';
 import ProductDetail from './components/ProductDetail';
+import LoadingScreen from './components/LoadingScreen';
+import { useLocation } from 'react-router-dom';
 import './App.css';
 
 import productsData from './data/products.json';
@@ -34,8 +36,20 @@ const App = () => {
     currentPage * productsPerPage
   );
 
+  const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Adjust the time as needed (2 seconds in this example)
+  }, []);
+
+  if (loading) {
+    return <LoadingScreen />;
+  }
   return (
+    <>
+      {loading && <LoadingScreen />}
     <Router>
       <Navbar />
   
@@ -52,6 +66,7 @@ const App = () => {
       </Routes>
       <Footer />
     </Router>
+    </>
   );
 };
 

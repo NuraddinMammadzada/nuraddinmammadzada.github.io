@@ -1,16 +1,25 @@
 import React from 'react';
 
+
 const ProductCard = ({ product }) => {
   return (
     <div className="product-card">
       <img src={product.image} alt={product.name} />
-      <h3>{product.name}</h3>
-      <p>{product.description}</p>
-      <div className="price">
-        <span>{product.price}</span>
-        {product.discount && <span className="discount">{product.originalPrice}</span>}
+      <div className="product-info">
+        <h3>{product.name}</h3>
+        <p>{product.description}</p>
+        <div className="product-price">
+          <span className="discounted-price">{product.price}</span>
+          {product.originalPrice && (
+            <span className="original-price">{product.originalPrice}</span>
+          )}
+        </div>
       </div>
-      <button>Add to cart</button>
+      <div className="product-overlay">
+        <button>Add to cart</button>
+        <button>Compare</button>
+        <button>Like</button>
+      </div>
     </div>
   );
 };

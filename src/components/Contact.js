@@ -1,8 +1,22 @@
-import React from "react";
 import { FaPhone, FaMapMarkerAlt, FaClock } from "react-icons/fa";
 import "./styles/Contact.css"
+import React, { useState, useEffect } from 'react';
+import LoadingScreen from './LoadingScreen';
 const Contact = () => {
+    const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Adjust the time as needed (2 seconds in this example)
+  }, []);
+
+  if (loading) {
+    return <LoadingScreen />;
+  }
   return (
+    <>
+       {loading && <LoadingScreen />}
     <div className="contact-page">
       {/* Header Section */}
       <div className="contact-header">
@@ -64,6 +78,7 @@ const Contact = () => {
       </div>
 
     </div>
+    </>
   );
 };
 

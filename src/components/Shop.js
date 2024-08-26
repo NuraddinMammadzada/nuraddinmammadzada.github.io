@@ -1,76 +1,61 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import productsData from '../data/products.json';
-import './styles/ProductCard.css';
+import React, { useState, useEffect } from 'react';
+import './styles/Shop.css'; // Custom CSS file
+import ProductCard from './ProductCard'; // Reusable ProductCard component
 
-const Shop = () => {
-  const [currentPage, setCurrentPage] = useState(1);
-  const productsPerPage = 12;
-  const totalPages = Math.ceil(productsData.length / productsPerPage);
+const ShopPage = () => {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
-  };
+  useEffect(() => {
+    // Fetch product data from your backend (API endpoint)
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch('http://localhost:5000/api/products');
+        const data = await response.json();
+        setProducts(data);
+        setLoading(false);
+      } catch (error) {
+        console.error('Error fetching products:', error);
+        setLoading(false);
+      }
+    };
 
-  const currentProducts = productsData.slice(
-    (currentPage - 1) * productsPerPage,
-    currentPage * productsPerPage
-  );
+    fetchProducts();
+  }, []);
+
+  if (loading) {
+    return <div className="loading">Loading...</div>;
+  }
 
   return (
-    <div className="shop">
-      <header className="shop-header">
+    <div className="shop-page">
+      <div className="shop-header">
         <h1>Shop</h1>
-        <nav>
-          <a href="/">Home</a> / <span>Shop</span>
-        </nav>
-      </header>
+        <p>Home &gt; Shop</p>
+      </div>
+
+      <div className="shop-filters">
+        <div className="filter-buttons">
+          <button>Filter</button>
+          <button>Show: 16</button>
+          <button>Sort by: Default</button>
+        </div>
+      </div>
 
       <div className="product-grid">
-        {currentProducts.map((product) => (
-          <Link to={`/product/${product.id}`} key={product.id} className="product-card">
-            <div className="image-container">
-              <img src={product.image} alt={product.name} />
-              {product.discount && <span className="badge">-{product.discount}%</span>}
-            </div>
-            <h3>{product.name}</h3>
-            <p className="description">{product.description}</p>
-            <div className="price">
-              <span>{product.price}</span>
-              {product.originalPrice && (
-                <span className="original-price">{product.originalPrice}</span>
-              )}
-            </div>
-            <button className="add-to-cart">Add to cart</button>
-          </Link>
+        {products.map((product) => (
+          <ProductCard key={product.id} product={product} />
         ))}
       </div>
 
       <div className="pagination">
-        <button
-          onClick={() => handlePageChange(currentPage - 1)}
-          disabled={currentPage === 1}
-        >
-          Previous
-        </button>
-        {[...Array(totalPages)].map((_, index) => (
-          <button
-            key={index}
-            onClick={() => handlePageChange(index + 1)}
-            className={currentPage === index + 1 ? 'active' : ''}
-          >
-            {index + 1}
-          </button>
-        ))}
-        <button
-          onClick={() => handlePageChange(currentPage + 1)}
-          disabled={currentPage === totalPages}
-        >
-          Next
-        </button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>Next</button>
       </div>
     </div>
   );
 };
 
-export default Shop;
+export default ShopPage;
