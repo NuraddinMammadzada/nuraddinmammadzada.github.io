@@ -6,7 +6,7 @@ const LoadingScreen = () => {
     <div className="loading-screen">
       <div className="loading-spinner">
         <div className="spinner-circle"></div>
-        <p>Loading...</p>
+        <p>Yuklenir...</p>
       </div>
     </div>
   );

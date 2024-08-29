@@ -1,0 +1,68 @@
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://wallpapers.com/images/featured/4k-oaax18kaapkokaro.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .form-container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    color: #fff;
+  }
+  
+  .form-container h1 {
+    margin-bottom: 1rem;
+    color: #00c6ff;
+  }
+  
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-container label {
+    margin-top: 1rem;
+  }
+  
+  .form-container input,
+  .form-container select {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.5rem;
+    color: #fff;
+  }
+  
+  .form-container button {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .form-container button:hover {
+    background: linear-gradient(90deg, #0072ff, #00c6ff);
+  }
+  
+  .form-container a {
+    color: #00c6ff;
+    text-decoration: none;
+  }
+  .error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 10px;
+  }
+  

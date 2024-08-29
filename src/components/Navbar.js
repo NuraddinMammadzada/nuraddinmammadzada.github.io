@@ -16,7 +16,7 @@ const Navbar = () => {
                 <li><Link to="/contact">Contact</Link></li>
             </ul>
             <div className="navbar-icons">
-                <Link to="/profile"><i class="fa-solid fa-user"></i></Link>
+                <Link to="/login"><i class="fa-solid fa-user"></i></Link>
                 <Link to="/search"><i class="fa-solid fa-magnifying-glass"></i></Link>
                 <Link to="/cart"><i class="fa-solid fa-cart-shopping"></i></Link>
             </div>

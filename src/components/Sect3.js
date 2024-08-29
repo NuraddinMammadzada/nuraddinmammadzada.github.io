@@ -1,7 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './styles/ProductGrid.css';
 
 const ProductGrid = () => {
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+      navigate('/shop');
+  };
   const products = [
     {
       id: 1,
@@ -98,7 +104,7 @@ const ProductGrid = () => {
         </div>
       ))}
       <div className="show-more">
-        <button>Show More</button>
+      <button onClick={handleButtonClick}>Show More</button>
       </div>
     </div>
   );

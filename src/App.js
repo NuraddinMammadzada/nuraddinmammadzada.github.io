@@ -7,12 +7,18 @@ import CartPage from './components/CartPage';
 import Footer from './components/Footer';
 import Shop from './components/Shop';
 import Contact from './components/Contact';
+import Login from './components/Login';
 import ProductDetail from './components/ProductDetail';
 import LoadingScreen from './components/LoadingScreen';
 import { useLocation } from 'react-router-dom';
+import SearchPage from './components/Search';
+import About from './components/About';
 import './App.css';
 
-import productsData from './data/products.json';
+
+
+import productsData from './data/products';
+
 
 
 const App = () => {
@@ -45,6 +51,7 @@ const App = () => {
   }, []);
 
   if (loading) {
+    
     return <LoadingScreen />;
   }
   return (
@@ -61,6 +68,9 @@ const App = () => {
         <Route path="/cart" element={<CartPage cartItems={[]} />} />
         <Route path="/shop" element={<Shop />} /> 
         <Route path="/contact" element={<Contact />} />
+        <Route path="/search" element={<SearchPage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/about" element={<About />} />
         <Route path="/product/:id" element={<ProductDetail />} />
 
       </Routes>

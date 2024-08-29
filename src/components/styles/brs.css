@@ -1,6 +1,8 @@
 .browse-range-section {
     text-align: center;
     padding: 50px 20px;
+    margin-bottom: 30px;
+    margin-top: 50px;
     background-color: #f9f9f9; /* Adjust the background color if needed */
 }
 
@@ -22,12 +24,13 @@
 }
 
 .range-item {
-    width: 300px;
+ width: 75%;
     transition: transform 0.3s ease;
 }
 
 .range-item img {
     width: 100%;
+    height: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
