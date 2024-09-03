@@ -59,7 +59,7 @@ const Shop = () => {
       <div className="product-grid">
         {products.map((product) => (
           <div
-            key={product.id}
+          key={product.id}
             className="product-card"
             onClick={() => handleProductClick(product.id)}
           >

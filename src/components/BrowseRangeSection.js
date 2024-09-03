@@ -8,8 +8,8 @@ import "./styles/brs.css"
 const BrowseRangeSection = () => {
     return (
         <section className="browse-range-section">
-            <h2>Browse The Range</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h2>Kateqoriyalarımız</h2>
+
             <div className="range-grid">
                 <div className="range-item">
                     <img src={diningImage} alt="Dining" />

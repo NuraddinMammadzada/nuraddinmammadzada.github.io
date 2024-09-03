@@ -1,7 +1,6 @@
 /* General Styling */
 body {
     font-family: 'Arial', sans-serif;
-    color: #333;
     margin: 0;
     padding: 0;
 }
@@ -12,15 +11,92 @@ body {
     padding: 40px 20px;
 }
 
+.contact-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .contact-header {
+      padding: 40px 15px;
+    }
+  
+    .contact-header h2 {
+      font-size: 2rem;
+    }
+  
+    .contact-header p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-header {
+      padding: 30px 10px;
+    }
+  
+    .contact-header h2 {
+      font-size: 1.8rem;
+    }
+  
+    .contact-header p {
+      font-size: 0.8rem;
+    }
+  }
+.contact-header {
+    position: relative;
+    background-image: url('../img/image\ copy\ 2.png');
+    /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.contact-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Adjust opacity for darker or lighter effect */
+    z-index: 1;
+}
+
+.contact-header h2,
+.contact-header p {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+}
+
 /* Header Section */
 .about-header {
     text-align: center;
     margin-bottom: 40px;
+    background-image: url('../img/image\ copy\ 2.png');
+    /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    width: 100%;
+    height: auto;
+    color: white;
 }
 
 .about-header h1 {
     font-size: 3rem;
-    color: #333333;
+    color: white;
 }
 
 .about-header p {
@@ -58,8 +134,10 @@ body {
 }
 
 .value {
-    background-color: rgba(255, 255, 255, 0.8); /* Light background with transparency */
-    backdrop-filter: blur(10px); /* Frosted glass effect */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Light background with transparency */
+    backdrop-filter: blur(10px);
+    /* Frosted glass effect */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -77,6 +155,7 @@ body {
     font-size: 1rem;
     color: #666666;
 }
+
 @media (max-width: 768px) {
     .about-content {
         flex-direction: column;

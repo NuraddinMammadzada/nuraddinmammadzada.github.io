@@ -1,190 +1,147 @@
-.poppins-thin {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .poppins-extralight {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .poppins-light {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .poppins-medium {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .poppins-semibold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .poppins-bold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .poppins-extrabold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-  .poppins-black {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .poppins-thin-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .poppins-extralight-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-  }
-  
-  .poppins-light-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .poppins-regular-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .poppins-medium-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .poppins-semibold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-  }
-  
-  .poppins-bold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .poppins-extrabold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: italic;
-  }
-  
-  .poppins-black-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-  }
-
-
-
-
-
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    font-family: "Poppins", sans-serif;
+/* General styling */
+.navbar {
+  display: flex; /* Flexbox applied to the main navbar */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  z-index: 1000;
 }
 
+/* Logo Styling */
 .navbar-logo {
-    display: flex;
-    align-items: center;
-  
-}
-
-.navbar-logo img {
-    width: 40px;
-    margin-right: 10px;
-}
-.navbar-logo a {
-    text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-logo span {
-    font-size: 32px;
-    font-weight: bold;
-    color: #000;
- 
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
 }
 
+/* Links Styling */
 .navbar-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
 .navbar-links li {
-    display: inline;
+  display: inline;
 }
 
 .navbar-links a {
-    text-decoration: none;
-    color: #000;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: color 0.3s;
+  text-decoration: none; /* Ensure no underline on links */
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
 .navbar-links a:hover {
-    color: #8E44AD; /* Purple hover color */
+  color: #8E44AD; /* Purple hover color */
 }
 
+/* Icons Styling */
 .navbar-icons {
-    display: flex;
-    gap: 20px;
-   
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
 .navbar-icons a {
-    color: #000;
-    font-size: 18px;
-    transition: color 0.3s;
+  text-decoration: none; /* Ensure no underline on icons */
+  color: #333;
+  font-size: 18px;
+  transition: color 0.3s;
 }
 
 .navbar-icons a:hover {
-    color: #8E44AD; /* Purple hover color */
+  color: #8E44AD; /* Purple hover color */
 }
 
-.icon-user::before,
-.icon-search::before,
-.icon-heart::before,
-.icon-cart::before {
-    content: ''; /* Replace with appropriate icon content */
-    font-family: 'YourIconFont'; /* Add your icon font here */
-    font-size: 1.5rem;
-    display: inline-block;
-    width: 24px;
-    height: 24px;
+/* Hamburger Menu Icon Styling */
+.navbar-menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  transition: all 0.3s ease-in-out;
+  color: #333;
+}
+
+/* Close Button Styling */
+.navbar-close-button {
+  display: none; /* Hidden by default */
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .none {
+    display: block;
+  }
+  .navbar-links {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 250px;
+      background-color: #f9f3e9; /* Slightly lighter dark background for the menu */
+      position: fixed;
+      top: 0;
+      right: -100%; /* Hidden by default */
+      height: 100vh;
+      padding-top: 60px;
+      text-align: center;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(100%);
+      transition: all 0.3s ease-in-out;
+  }
+
+  .navbar-links.active {
+      right: 0;
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+  }
+
+  .navbar-menu-icon {
+      display: block; 
+  }
+
+  .navbar-links a {
+      padding: 15px 0;
+      font-size: 1.2rem;
+  }
+
+  .navbar-links a i {
+      margin-right: 10px;
+  }
+
+  .navbar-icons {
+      display: none;
+  }
+
+  .navbar-close-button {
+      display: block; /* Show only when mobile menu is active */
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 24px;
+      color: #494949;
+      cursor: pointer;
+  }
+
+  .navbar-close-button:hover {
+      color: #8E44AD; /* Purple hover color */
+  }
+  ul.none {
+    display: block;
+  }
+
+}
+.none {
+  display: none;
 }

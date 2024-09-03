@@ -11,68 +11,68 @@ const ProductGrid = () => {
   const products = [
     {
       id: 1,
-      name: 'Syltherine',
+      name: 'Product 1',
       description: 'Stylish cafe chair',
       price: 250,
       originalPrice: 350,
       discount: '-30%',
-      image: 'https://via.placeholder.com/300',
+      image: 'https://www.pandasecurity.com/en/mediacenter/src/uploads/2013/11/pandasecurity-facebook-photo-privacy.jpg',
     },
     {
       id: 2,
-      name: 'Leviosa',
+      name: 'Product 2 ',
       description: 'Stylish cafe chair',
       price: 250,
-      image: 'https://via.placeholder.com/300',
+      image: 'https://www.pandasecurity.com/en/mediacenter/src/uploads/2013/11/pandasecurity-facebook-photo-privacy.jpg',
     },
     {
       id: 3,
-      name: 'Lolito',
+      name: 'Product 3',
       description: 'Luxury big sofa',
       price: 700,
       originalPrice: 1400,
       discount: '-50%',
-      image: 'https://via.placeholder.com/300',
+      image: 'https://www.pandasecurity.com/en/mediacenter/src/uploads/2013/11/pandasecurity-facebook-photo-privacy.jpg',
     },
     {
       id: 4,
-      name: 'Respira',
+      name: 'Product 4',
       description: 'Outdoor bar table and stool',
       price: 50,
       isNew: true,
-      image: 'https://via.placeholder.com/300',
+      image: 'https://www.pandasecurity.com/en/mediacenter/src/uploads/2013/11/pandasecurity-facebook-photo-privacy.jpg',
     },
     {
       id: 5,
-      name: 'Grifo',
+      name: 'Product 5',
       description: 'Night lamp',
       price: 150,
-      image: 'https://via.placeholder.com/300',
+      image: 'https://www.pandasecurity.com/en/mediacenter/src/uploads/2013/11/pandasecurity-facebook-photo-privacy.jpg',
     },
     {
       id: 6,
-      name: 'Muggo',
+      name: 'Product 6',
       description: 'Small mug',
       price: 15,
       isNew: true,
-      image: 'https://via.placeholder.com/300',
+      image: 'https://www.pandasecurity.com/en/mediacenter/src/uploads/2013/11/pandasecurity-facebook-photo-privacy.jpg',
     },
     {
       id: 7,
-      name: 'Pingky',
+      name: 'Product 7',
       description: 'Cute bed set',
       price: 700,
       originalPrice: 1400,
       discount: '-50%',
-      image: 'https://via.placeholder.com/300',
+      image: 'https://www.pandasecurity.com/en/mediacenter/src/uploads/2013/11/pandasecurity-facebook-photo-privacy.jpg',
     },
     {
       id: 8,
-      name: 'Potty',
+      name: 'Product 8',
       description: 'Minimalist flower pot',
       price: 50,
       isNew: true,
-      image: 'https://via.placeholder.com/300',
+      image: 'https://www.pandasecurity.com/en/mediacenter/src/uploads/2013/11/pandasecurity-facebook-photo-privacy.jpg',
     },
   ];
 
@@ -82,12 +82,12 @@ const ProductGrid = () => {
         <div key={product.id} className="product-card">
           <div className="image-wrapper">
             {product.discount && <div className="discount-badge">{product.discount}</div>}
-            {product.isNew && <div className="new-badge">New</div>}
+            {product.isNew && <div className="new-badge">Yeni</div>}
             <img src={product.image} alt={product.name} />
-            <button className="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+            <button className="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>Səbətə-Əlavə et</button>
             <div className="card-actions1">
-              <button><i class="fa-solid fa-share-nodes"></i>Share</button>
-              <button><i class="fa-solid fa-arrow-right-arrow-left"></i>Compare</button>
+              <button><i class="fa-solid fa-share-nodes"></i>Paylaş</button>
+              {/* <button><i class="fa-solid fa-arrow-right-arrow-left"></i>Compare</button> */}
               {/* <button><i class="fa-solid fa-heart"></i>Like</button> */}
             </div>
           </div>
@@ -104,7 +104,7 @@ const ProductGrid = () => {
         </div>
       ))}
       <div className="show-more">
-      <button onClick={handleButtonClick}>Show More</button>
+      <button onClick={handleButtonClick}>Daha çox </button>
       </div>
     </div>
   );

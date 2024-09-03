@@ -118,6 +118,7 @@ const ProductDetail = () => {
             >
               <img src={relatedProduct.image} alt={relatedProduct.name} />
               <h3>{relatedProduct.name}</h3>
+                      
               <p className="price">${parseFloat(relatedProduct.price.replace('$', '')).toFixed(2)}</p>
             </div>
           ))}

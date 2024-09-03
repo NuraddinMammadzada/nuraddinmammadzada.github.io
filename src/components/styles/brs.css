@@ -3,7 +3,8 @@
     padding: 50px 20px;
     margin-bottom: 30px;
     margin-top: 50px;
-    background-color: #f9f9f9; /* Adjust the background color if needed */
+    background-color: #f9f9f9;
+    /* Adjust the background color if needed */
 }
 
 .browse-range-section h2 {
@@ -24,7 +25,7 @@
 }
 
 .range-item {
- width: 75%;
+    width: 19%;
     transition: transform 0.3s ease;
 }
 
@@ -43,4 +44,12 @@
 
 .range-item:hover {
     transform: scale(1.05);
+}
+@media (max-width: 480px) {
+    .range-item {
+        width: 50%;
+    }
+    .range-item img{
+        width: 100%;
+    }
 }
